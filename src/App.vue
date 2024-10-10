@@ -14,6 +14,7 @@ import {
   Tag as ATag,
   Badge as ABadge,
   Image as AImage,
+  Space as ASpace,
   message,
 } from "ant-design-vue";
 import ruRu from "ant-design-vue/es/locale/ru_RU";
@@ -455,6 +456,34 @@ function getColorProductValuation(record) {
     return "red";
   }
 }
+
+// Храним информацию о текущей редактируемой строке
+const editingRow = ref({ id: null, answer: '' });
+
+// Проверяем, редактируется ли строка
+const isEditing = (id) => {
+  return editingRow.value.id === id;
+};
+
+// Функция для редактирования
+const edit = (record) => {
+  // Инициализируем ответ текущим значением
+  editingRow.value = { id: record.id, answer: record.answer || '' };
+};
+
+// Сохранение изменений
+const save = (id) => {
+  const index = feedbacksData.value.findIndex((item) => item.id === id);
+  if (index !== -1) {
+    feedbacksData.value[index].answer = editingRow.value.answer;
+  }
+  editingRow.value = { id: null, answer: '' };
+};
+
+// Отмена редактирования
+const cancelEdit = () => {
+  editingRow.value = { id: null, answer: '' };
+};
 </script>
 
 <template>
@@ -533,8 +562,9 @@ function getColorProductValuation(record) {
       :columns="columns"
       :data-source="feedbacksData"
       :loading="loading"
+      row-key="id"
     >
-      <template #bodyCell="{ column, record }">
+      <template #bodyCell="{ column, record, index }">
         <template v-if="column.key === 'userName'">
           <span v-if="record.userName">
             {{ record.userName }}
@@ -596,6 +626,28 @@ function getColorProductValuation(record) {
               {{ record.comment.text }}
             </p>
           </div>
+        </template>
+
+        <template v-if="column.key === 'answer'">
+          <template v-if="isEditing(record.id)">
+            <a-textarea
+              v-model:value="editingRow.answer"
+              auto-size
+            />
+            <a-space style="margin-top: 10px;">
+              <a-button @click="save(record.id)" type="primary">
+                Сохранить
+              </a-button>
+              <a-button @click="cancelEdit">
+                Отмена
+              </a-button>
+            </a-space>
+          </template>
+          <template v-else>
+            <span @click="edit(record)"> <!-- При клике переходим в режим редактирования -->
+              {{ record.answer || 'Нет ответа' }}
+            </span>
+          </template>
         </template>
 
         <template v-if="column.key === 'status'">

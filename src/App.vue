@@ -167,7 +167,7 @@ async function generateAnwser(options) {
 
   const client = axios.create({
     headers: {
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
+      Authorization: `Bearer ${OPENAI_API_KEY.value}`,
     }
   });
 

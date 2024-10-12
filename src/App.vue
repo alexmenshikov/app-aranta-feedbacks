@@ -28,26 +28,39 @@ dayjs.extend(utc);
 const companyArray = [
   {
     id: 1,
-    name: "ARANTA Decor",
+    name: "ARANTA Decor (WB)",
     apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0MzUzODUyMSwiaWQiOiIwMTkyNDcyNS1mMGUzLTc4MTEtYTJjZC1jOThiOWZlNDc0YjMiLCJpaWQiOjUzNzE1MjI2LCJvaWQiOjU3MDAwOCwicyI6MTI4LCJzaWQiOiI0ZTkzM2M1NC1kYzA2LTQzOWEtYTA2Ni1mNWRkZjFlMDdhNDUiLCJ0IjpmYWxzZSwidWlkIjo1MzcxNTIyNn0.dWCg4v_7MCRQGNMEXuKTM910gDu0ZuijqaGiHvGE4mQuJibGXX4S5qW5csKJQr3bKnZsqDN3N50x1VMLaFYzBw",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
     prompt: "Мы компания ARANTA Decor, занимаемся продажей Сухоцветов (пампасной травы), как натуральных, стабилизированных, так и искусственных. Так же в нашем ассортименте есть ароматические саше и вазы для цветов и сухоцветов. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей. Отвечая на отзывы и вопросы, клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, неформальным, с приятным послевкусием. Можно добавить приятных смайликов, что бы текст выглядел живее. В конце ответа должна быть фраза от нашей команды, а в начале приветствие. Также должен быть призыв к покупке снова. Отзыв который я пришлю будет содержать имя покупателя, оценку от покупателя, комментарии, достоинства товара и недостатки. Если клиент просто поставил низкую оценку без дополнительной информации, нужно поинтересоваться где мы не доработали. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно попросить его связаться с нами через чат продавца и заверить что мы решим его вопрос и не оставим его с проблемой. Если клиент жалуется на доставку, нужно объяснить что мы не можем влиять на скорость и качество доставки, за это отвечает маркетплейс, но всё же посоветовать связаться с нами для решения вопроса. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
   },
-  // {
-  //   id: 2,
-  //   name: "Sunflowers",
-  // apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0MTczMjQ1MSwiaWQiOiIwMTkxZGI3Zi03ZjVlLTcyZTgtYjVkYS02M2JiMjM3MmM4ODUiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwNzg0NjMsInMiOjEwMjYsInNpZCI6IjBmMzY0NjAzLWE4MWMtNDNhZC05MjliLTJhZjMxOWFhZTczYyIsInQiOmZhbHNlLCJ1aWQiOjk2OTgyNDY4fQ.FWLQfZDGiGOEJBFZHrmo5F3Olw6Ms_9YQyqIIUJO2JCzNjoCRrOJMxhj-j1xiGA-lzMXEya9nO0IcJ2wNqk7ZA",
-  // telegramToken: "6584534762:AAFtICID-IRygrU-pt_A_N7dA5ypkAwqCO8",
-  // chatId: "-4585796755",
-  // },
-  // {
-  // id: 3,
-  // name: "Ne Vi",
-  // apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0MTczMjUzMiwiaWQiOiIwMTkxZGI4MC1iYzI3LTcxOTMtYTRhYS1iZGJiZWVhODQ2ZmUiLCJpaWQiOjE5NjI0NzM2LCJvaWQiOjQxMjc0NjcsInMiOjEwMjYsInNpZCI6Ijg0YjlkNmQzLTAxMTItNDBiZi05MTZiLWVlZDFkOGY3NjBhNSIsInQiOmZhbHNlLCJ1aWQiOjE5NjI0NzM2fQ.IEdxZFeC-HddNOUSY3mkzfJi7lp75ox4Xgu9j_yRLdKKNVOGDaxq3PqeA1bACAOth6wjZtYYPI39-T-Y3IT0Pw",
-  // telegramToken: "7529315847:AAGkdEUV-4uZvsauYev3WAA06YxvGUuYsd0",
-  // chatId: "-4562130542",
-  // },
+  {
+    id: 2,
+    name: "ARANTA Art Supplies (WB)",
+    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjE0MiwiaWQiOiIwMTkyN2VjYi1kYWZiLTcxNDItOWJjZC03MDA0YmMzZTUxYzYiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwMTg1MzQsInMiOjEyOCwic2lkIjoiZGNlM2E3NDktZTRmZC00OTAwLWJiZjItYmMzNjI4M2Q5OTgwIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.e5n8WrYSylkgacUML2a4E8RfHaK1QZQ5ijWg912ePuUjerovDIeZFhkotg5ZvOwqDixuPaxJr9_BM23AlXcqDg",
+    telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
+    chatId: "514186798",
+    prompt: ""
+  },
+  {
+    id: 3,
+    name: "Sunflowers (WB)",
+    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjI4NiwiaWQiOiIwMTkyN2VjZS0xMDc4LTc5YWMtYWRhOS02OGEyY2E3ZTFhZDIiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwNzg0NjMsInMiOjEyOCwic2lkIjoiMGYzNjQ2MDMtYTgxYy00M2FkLTkyOWItMmFmMzE5YWFlNzNjIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.zKFH5qObtzMhttQ6Ju0XBuBmLbrjofW7ilXR8dqskWSVyijpf6dOQ2qJxW9Umzw35rtPDAwrc-caUuHkGkeHKg",
+    telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
+    chatId: "514186798",
+    prompt: ""
+  },
+];
+
+const telegramChatIds = [
+  {
+    name: "Александр",
+    id: 514186798,
+  },
+  {
+    name: "Артём",
+    id: 428444661,
+  }
 ];
 
 let timerId = null;
@@ -88,7 +101,7 @@ const columns =  ref([
     title: 'Ответ',
     dataIndex: 'answer',
     key: 'answer',
-    width: '16%',
+    width: '18%',
   },
   {
     title: 'Статус',
@@ -115,6 +128,14 @@ const loading = ref(false);
 const companyOptions = ref([]);
 
 const companySelected = ref(JSON.stringify(companyArray[0]));
+
+watch(companySelected, (newValue, oldValue) => {
+  if (newValue !== oldValue) {
+    handleStop();
+
+    initValues();
+  }
+});
 
 companyOptions.value = transformedCompanyOptions.value;
 
@@ -163,6 +184,17 @@ onMounted(() => {
   initValues();
 });
 
+async function startGenerateAnwser(id) {
+  const feedback = feedbacksData.value.find((feedbackItem) => feedbackItem.id === id);
+
+  feedback.answer = await generateAnwser({
+    userName: feedback.userName,
+    comment: feedback.comment,
+    productName: feedback.productName,
+    productValuation: feedback.productValuation,
+  });
+}
+
 async function generateAnwser(options) {
   const { userName, comment, productName, productValuation } = options;
 
@@ -184,18 +216,14 @@ async function generateAnwser(options) {
     max_tokens: 1000
   };
 
-  loading.value = true;
   message.loading('Генерация ответа');
 
   try {
     const response = await client.post("https://api.openai.com/v1/chat/completions", params);
 
-    loading.value = false;
-
     return response.data.choices[0].message.content; // Возвращаем ответ
   } catch (error) {
     console.error("Ошибка при запросе к OpenAI:", error);
-    loading.value = false;
     return "Не удалось получить ответ от OpenAI"; // Возвращаем сообщение об ошибке
   }
 }
@@ -210,21 +238,27 @@ watch(feedbacksList, async (newData) => {
       updateData.value.push(existingItem);
     } else {
       // Ждем ответа от OpenAI
-      const answer = await generateAnwser({
-        userName: newItem.userName,
-        comment: newItem.comment,
-        productName: newItem.productName,
-        productValuation: newItem.productValuation,
-      });
+      // const answer = await generateAnwser({
+      //   userName: newItem.userName,
+      //   comment: newItem.comment,
+      //   productName: newItem.productName,
+      //   productValuation: newItem.productValuation,
+      // });
 
       // Логируем ответ для проверки
       // console.log("Сгенерированный ответ для отзыва:", answer);
 
       // Добавляем элемент в массив только после получения ответа
+      // updateData.value.push({
+      //   ...newItem,
+      //   status: false,
+      //   answer: answer, // Убедитесь, что сюда добавляется правильный ответ
+      // });
+
       updateData.value.push({
         ...newItem,
         status: false,
-        answer: answer, // Убедитесь, что сюда добавляется правильный ответ
+        answer: "Ответ еще не сгенерирован"
       });
 
       // sendMessageToTelegram({
@@ -234,6 +268,7 @@ watch(feedbacksList, async (newData) => {
       sendMessageToAllUsers(`
 *${transformedCompanySelected.value.name}*
 Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*
+SKU *${newItem.comment.supplierArticle}*
 Оценка *${getScoreWithSymbol(newItem.productValuation)}*
 Дата *${newItem.createdDate}*
 `);
@@ -251,6 +286,7 @@ function getScoreWithSymbol(value) {
 
 function feedbacksGet() {
   loading.value = true;
+  message.loading('Загрузка отзывов', 0.5);
 
   axios
     .get("https://feedbacks-api.wildberries.ru/api/v1/feedbacks", {
@@ -270,6 +306,7 @@ function feedbacksGet() {
         createdDate: dayjs(feedback.createdDate).format('DD.MM.YYYY HH:mm'),
         userName: feedback.userName,
         comment: {
+          supplierArticle: feedback.productDetails.supplierArticle,
           pros: feedback.pros,
           cons: feedback.cons,
           text: feedback.text,
@@ -298,6 +335,7 @@ function handleStart () {
 function handleStop () {
   isRunning.value = false;
   clearInterval(timerId); // Остановить таймер
+  message.info('Остановили загрузку отзывов!');
 }
 
 function resetTimer() {
@@ -342,39 +380,39 @@ function isValidArray(arr) {
 const token = transformedCompanySelected.value.telegramToken;
 
 // Функция для получения обновлений и вытаскивания chat_id пользователей
-async function getChatIds() {
-  try {
-    const response = await axios.get(`https://api.telegram.org/bot${token}/getUpdates`);
-    const updates = response.data.result;
-
-    // Извлекаем уникальные chat_id
-    const chatIds = [...new Set(updates.map(update => update.message.chat.id))];
-
-    return chatIds;
-  } catch (error) {
-    console.error('Ошибка при получении обновлений:', error);
-  }
-}
+// async function getChatIds() {
+//   try {
+//     const response = await axios.get(`https://api.telegram.org/bot${token}/getUpdates`);
+//     const updates = response.data.result;
+//
+//     // Извлекаем уникальные chat_id
+//     const chatIds = [...new Set(updates.map(update => update.message.chat.id))];
+//
+//     return chatIds;
+//   } catch (error) {
+//     console.error('Ошибка при получении обновлений:', error);
+//   }
+// }
 
 // Функция для отправки сообщения всем пользователям
 async function sendMessageToAllUsers(message) {
-  const chatIds = await getChatIds();
+  // const chatIds = await getChatIds();
 
-  if (chatIds.length === 0) {
+  if (telegramChatIds.length === 0) {
     console.log('Нет новых пользователей.');
     return;
   }
 
-  for (const chatId of chatIds) {
+  for (const chatId of telegramChatIds) {
     try {
       await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
-        chat_id: chatId,
+        chat_id: chatId.id,
         text: message,
         parse_mode: 'Markdown'
       });
       // console.log(`Сообщение отправлено пользователю с chat_id: ${chatId}`);
     } catch (error) {
-      console.error(`Ошибка при отправке сообщения пользователю с chat_id: ${chatId}`, error);
+      console.error(`Ошибка при отправке сообщения пользователю с chat_id: ${chatId.id}`, error);
     }
   }
 }
@@ -616,6 +654,9 @@ const cancelEdit = () => {
 
         <template v-if="column.key === 'comment'">
           <div style="display: flex; flex-direction: column;">
+            <p v-if="record.comment.supplierArticle">
+              <b>SKU: </b> {{ record.comment.supplierArticle }}
+            </p>
             <p v-if="record.comment.pros">
               <b>Достоинства: </b> {{ record.comment.pros }}
             </p>
@@ -660,6 +701,8 @@ const cancelEdit = () => {
 
         <template v-if="column.key === 'makeAnswer'">
           <div style="display: flex; flex-direction: column">
+            <a @click="startGenerateAnwser(record.id)" style="margin-bottom: 10px">Сгенерировать</a>
+
             <a @click="makeAnswer(record.id)">Ответить</a>
           </div>
         </template>

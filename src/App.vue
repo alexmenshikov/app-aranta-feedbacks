@@ -335,7 +335,6 @@ function handleStart () {
 function handleStop () {
   isRunning.value = false;
   clearInterval(timerId); // Остановить таймер
-  message.info('Остановили загрузку отзывов!');
 }
 
 function resetTimer() {

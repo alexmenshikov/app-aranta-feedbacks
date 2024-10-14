@@ -57,11 +57,13 @@ const telegramChatIds = [
     name: "Александр",
     id: 514186798,
   },
-  {
-    name: "Артём",
-    id: 428444661,
-  }
+  // {
+  //   name: "Артём",
+  //   id: 428444661,
+  // }
 ];
+
+const messagesUnansweredFeedback = ref([]);
 
 let timerId = null;
 const isRunning = ref(false);
@@ -130,12 +132,20 @@ const companyOptions = ref([]);
 const companySelected = ref(JSON.stringify(companyArray[0]));
 
 watch(companySelected, (newValue, oldValue) => {
+  localStorage.setItem("company_selected_feedbacks", JSON.stringify(newValue));
+
   if (newValue !== oldValue) {
     handleStop();
 
     initValues();
   }
 });
+
+function setDefaultPrompt() {
+  localStorage.removeItem(fieldCompanies("prompt"));
+
+  prompt.value = transformedCompanySelected.value.prompt;
+}
 
 companyOptions.value = transformedCompanyOptions.value;
 
@@ -173,11 +183,16 @@ watch(prompt, (newValue) => {
 });
 
 function initValues() {
+  const getCompanySelected = localStorage.getItem("company_selected_feedbacks");
+  companySelected.value = JSON.parse(getCompanySelected) || JSON.stringify(companyArray[0]);
+
   const getPrompt = localStorage.getItem(fieldCompanies("prompt"));
   prompt.value = getPrompt || transformedCompanySelected.value.prompt;
 
   const getOPENAI_API_KEY = localStorage.getItem(fieldCompanies("OPENAI_API_KEY"));
   OPENAI_API_KEY.value = getOPENAI_API_KEY || "";
+
+  feedbacksData.value = [];
 }
 
 onMounted(() => {
@@ -261,17 +276,14 @@ watch(feedbacksList, async (newData) => {
         answer: "Ответ еще не сгенерирован"
       });
 
-      // sendMessageToTelegram({
-      //   createdDate: newItem.createdDate,
-      //   userName: newItem.userName,
-      // })
-      sendMessageToAllUsers(`
-*${transformedCompanySelected.value.name}*
-Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*
-SKU *${newItem.comment.supplierArticle}*
-Оценка *${getScoreWithSymbol(newItem.productValuation)}*
-Дата *${newItem.createdDate}*
-`);
+      sendMessageToAllUsers(
+        `*${transformedCompanySelected.value.name}*\n` +
+        `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*\n` +
+        `SKU *${newItem.comment.supplierArticle}*\n` +
+        `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n` +
+        `Дата *${newItem.createdDate}*`,
+        newItem.id
+      );
     }
   }
 
@@ -394,7 +406,7 @@ const token = transformedCompanySelected.value.telegramToken;
 // }
 
 // Функция для отправки сообщения всем пользователям
-async function sendMessageToAllUsers(message) {
+async function sendMessageToAllUsers(message, feedbackId) {
   // const chatIds = await getChatIds();
 
   if (telegramChatIds.length === 0) {
@@ -404,10 +416,16 @@ async function sendMessageToAllUsers(message) {
 
   for (const chatId of telegramChatIds) {
     try {
-      await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
+      const response = await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
         chat_id: chatId.id,
         text: message,
         parse_mode: 'Markdown'
+      });
+
+      messagesUnansweredFeedback.value.push({
+        messageId: response.data.result.message_id,
+        feedbackId: feedbackId,
+        company: transformedCompanySelected.value.name
       });
       // console.log(`Сообщение отправлено пользователю с chat_id: ${chatId}`);
     } catch (error) {
@@ -546,6 +564,20 @@ const cancelEdit = () => {
               auto-size
               :disabled="isRunning"
             />
+          </a-form-item>
+        </a-col>
+      </a-row>
+
+      <a-row :gutter="24">
+        <a-col :span="24">
+          <a-form-item label="" name="defaultPrompt">
+            <a-button
+              type="dashed"
+              :disabled="isRunning"
+              @click="setDefaultPrompt"
+            >
+              Значение prompt по умолчанию
+            </a-button>
           </a-form-item>
         </a-col>
       </a-row>

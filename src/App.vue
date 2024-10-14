@@ -15,6 +15,8 @@ import {
   Badge as ABadge,
   Image as AImage,
   Space as ASpace,
+  Collapse as ACollapse,
+  CollapsePanel as ACollapsePanel,
   message,
 } from "ant-design-vue";
 import ruRu from "ant-design-vue/es/locale/ru_RU";
@@ -544,45 +546,49 @@ const cancelEdit = () => {
 <template>
   <a-config-provider :locale="ruRu">
     <a-form ref="form" layout="vertical">
-      <a-row :gutter="24">
-        <a-col :span="24">
-          <a-form-item label="OPENAI_API_KEY" name="OPENAI_API_KEY">
-            <a-textarea
-              v-model:value="OPENAI_API_KEY"
-              auto-size
-              :disabled="isRunning"
-            />
-          </a-form-item>
-        </a-col>
-      </a-row>
+      <a-collapse collapsible="header">
+        <a-collapse-panel header="Ключ для ChatGPT и prompt">
+          <a-row :gutter="24">
+            <a-col :span="24">
+              <a-form-item label="OPENAI_API_KEY" name="OPENAI_API_KEY">
+                <a-textarea
+                  v-model:value="OPENAI_API_KEY"
+                  auto-size
+                  :disabled="isRunning"
+                />
+              </a-form-item>
+            </a-col>
+          </a-row>
 
-      <a-row :gutter="24">
-        <a-col :span="24">
-          <a-form-item label="Prompt" name="prompt">
-            <a-textarea
-              v-model:value="prompt"
-              auto-size
-              :disabled="isRunning"
-            />
-          </a-form-item>
-        </a-col>
-      </a-row>
+          <a-row :gutter="24">
+            <a-col :span="24">
+              <a-form-item label="Prompt" name="prompt">
+                <a-textarea
+                  v-model:value="prompt"
+                  auto-size
+                  :disabled="isRunning"
+                />
+              </a-form-item>
+            </a-col>
+          </a-row>
 
-      <a-row :gutter="24">
-        <a-col :span="24">
-          <a-form-item label="" name="defaultPrompt">
-            <a-button
-              type="dashed"
-              :disabled="isRunning"
-              @click="setDefaultPrompt"
-            >
-              Значение prompt по умолчанию
-            </a-button>
-          </a-form-item>
-        </a-col>
-      </a-row>
+          <a-row :gutter="24">
+            <a-col :span="24">
+              <a-form-item label="" name="defaultPrompt">
+                <a-button
+                  type="dashed"
+                  :disabled="isRunning"
+                  @click="setDefaultPrompt"
+                >
+                  Значение prompt по умолчанию
+                </a-button>
+              </a-form-item>
+            </a-col>
+          </a-row>
+        </a-collapse-panel>
+      </a-collapse>
 
-      <a-row :gutter="24" style="display: flex; align-items: flex-end;">
+      <a-row :gutter="24" style="display: flex; align-items: flex-end; margin-top: 10px;">
         <a-col :span="12">
           <a-form-item label="Компания" name="companySelected">
             <a-select

@@ -58,14 +58,14 @@ const companyArray = [
 ];
 
 const telegramChatIds = [
-  // {
-  //   name: "Александр",
-  //   id: 514186798,
-  // },
   {
-    name: "Артём",
-    id: 428444661,
-  }
+    name: "Александр",
+    id: 514186798,
+  },
+  // {
+  //   name: "Артём",
+  //   id: 428444661,
+  // }
 ];
 
 const messagesUnansweredFeedback = ref([]);
@@ -145,16 +145,6 @@ watch(companySelected, (newValue, oldValue) => {
     initValues();
   }
 });
-
-// function setDefaultPrompt() {
-//   localStorage.removeItem(fieldCompanies("prompt"));
-//   prompt.value = transformedCompanySelected.value.prompt;
-// }
-//
-// function setDefaultPromptQuestion() {
-//   localStorage.removeItem(fieldCompanies("prompt_question"));
-//   promptQuestion.value = transformedCompanySelected.value.promptQuestion;
-// }
 
 companyOptions.value = transformedCompanyOptions.value;
 
@@ -291,16 +281,15 @@ async function generateAnwser(options) {
   });
 
   const text = type === "feedback"
-    ? `Вот информация о его отзыве: Имя покупателя: ${userName}, товар: ${productName}, оценка: ${productValuation}, отзыв: ${comment.text}, достоинства товара по мнению покупателя: ${comment.pros}, недостатки товара по мнению покупателя: ${comment.cons} ${image ? 'покупатель добавил фотографии' : ''}.`
-    : `Вот вопрос от покупателя: ${comment.text} по товару ${productName}`;
+    ? `Информация о его отзыве: ${userName && `Имя покупателя: ${userName}.`} ${productName && ` Купленный товар: ${productName}.`} ${productValuation && ` Оценка: ${productValuation}.`} ${comment.text && ` Отзыв: ${comment.text}.`} ${comment.pros && ` Достоинства товара по мнению покупателя: ${comment.pros}.`} ${comment.cons && ` Недостатки товара по мнению покупателя: ${comment.cons}.`} ${image ? ' А так же покупатель добавил фотографию(и) к отзыву.' : ''}`
+    : `Вопрос от покупателя: ${comment.text} по товару ${productName}`;
 
   const params = {
-    // model: "gpt-3.5-turbo",
     model: "gpt-4o",
     messages: [
       {
         role: "user",
-        content: `${type === "feedback" ? prompt.value : promptQuestion.value}. ${text}`,
+        content: `${type === "feedback" ? prompt.value : promptQuestion.value} ${text}`,
       }
     ],
     max_tokens: 1000
@@ -360,41 +349,6 @@ watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
 
   feedbacksAndQuestions.value = updateData.value;
 });
-// watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
-//   const updateData = [...feedbacksAndQuestions.value];
-//
-//   const processNewData = (newData, type) => {
-//     for (const newItem of newData) {
-//       const existingItem = updateData.find(item => item.id === newItem.id);
-//
-//       if (!existingItem) {
-//         updateData.push({
-//           ...newItem,
-//           type,
-//           status: false,
-//           answer: "Ответ еще не сгенерирован"
-//         });
-//
-//         const message = type === 'feedback'
-//           ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
-//           : 'Новый вопрос';
-//
-//         sendMessageToAllUsers(
-//           `*${transformedCompanySelected.value.name}*\n` +
-//           `${message}\n` +
-//           `SKU *${newItem.comment.supplierArticle}*\n` +
-//           `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
-//           newItem.id
-//         );
-//       }
-//     }
-//   };
-//
-//   processNewData(newFeedbacks, 'feedback');
-//   processNewData(newQuestions, 'question');
-//
-//   feedbacksAndQuestions.value = updateData;
-// });
 
 // watch(feedbacksList, async (newData) => {
 //   const updateData = ref([]);
@@ -481,7 +435,6 @@ function feedbacksGet() {
     .then(response => {
       feedbacksList.value = response.data.data.feedbacks.map((feedback) => ({
         id: feedback.id,
-        // createdDate: dayjs(feedback.createdDate).format('DD.MM.YYYY HH:mm'),
         createdDate: feedback.createdDate,
         userName: feedback.userName,
         comment: {
@@ -525,7 +478,6 @@ function questionsGet() {
     .then(response => {
       questionsList.value = response.data.data.questions.map((question) => ({
         id: question.id,
-        // createdDate: dayjs(question.createdDate).format('DD.MM.YYYY HH:mm'),
         createdDate: question.createdDate,
         userName: "",
         comment: {
@@ -752,32 +704,6 @@ onUnmounted(() => {
 <!--          <a-row v-if="promptQuestionDateOfEditing" :gutter="24" style="margin-top: -20px;">-->
 <!--            <a-col :span="24">-->
 <!--              Дата изменения {{ promptQuestionDateOfEditing }}-->
-<!--            </a-col>-->
-<!--          </a-row>-->
-
-<!--          <a-row :gutter="24">-->
-<!--            <a-col :span="8">-->
-<!--              <a-form-item label="" name="defaultPrompt">-->
-<!--                <a-button-->
-<!--                  type="dashed"-->
-<!--                  :disabled="isRunning"-->
-<!--                  @click="setDefaultPrompt"-->
-<!--                  block-->
-<!--                >-->
-<!--                  Значение prompt для отзывов по умолчанию-->
-<!--                </a-button>-->
-<!--              </a-form-item>-->
-<!--            </a-col>-->
-<!--            <a-col :span="8">-->
-<!--              <a-form-item label="" name="defaultPrompt">-->
-<!--                <a-button-->
-<!--                  type="dashed"-->
-<!--                  :disabled="isRunning"-->
-<!--                  @click="setDefaultPromptQuestion"-->
-<!--                >-->
-<!--                  Значение prompt для вопросов по умолчанию-->
-<!--                </a-button>-->
-<!--              </a-form-item>-->
 <!--            </a-col>-->
 <!--          </a-row>-->
         </a-collapse-panel>

@@ -34,7 +34,8 @@ const companyArray = [
     apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0MzUzODUyMSwiaWQiOiIwMTkyNDcyNS1mMGUzLTc4MTEtYTJjZC1jOThiOWZlNDc0YjMiLCJpaWQiOjUzNzE1MjI2LCJvaWQiOjU3MDAwOCwicyI6MTI4LCJzaWQiOiI0ZTkzM2M1NC1kYzA2LTQzOWEtYTA2Ni1mNWRkZjFlMDdhNDUiLCJ0IjpmYWxzZSwidWlkIjo1MzcxNTIyNn0.dWCg4v_7MCRQGNMEXuKTM910gDu0ZuijqaGiHvGE4mQuJibGXX4S5qW5csKJQr3bKnZsqDN3N50x1VMLaFYzBw",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
-    prompt: "Мы компания ARANTA Decor, занимаемся продажей Сухоцветов (пампасной травы), как натуральных, стабилизированных, так и искусственных. Так же в нашем ассортименте есть ароматические саше и вазы для цветов и сухоцветов. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей. Отвечая на отзывы и вопросы, клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, неформальным, с приятным послевкусием. Можно добавить приятных смайликов, что бы текст выглядел живее. В конце ответа должна быть фраза от нашей команды, а в начале приветствие. Также должен быть призыв к покупке снова. Отзыв который я пришлю будет содержать имя покупателя, оценку от покупателя, комментарии, достоинства товара и недостатки. Если клиент просто поставил низкую оценку без дополнительной информации, нужно поинтересоваться где мы не доработали. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно попросить его связаться с нами через чат продавца и заверить что мы решим его вопрос и не оставим его с проблемой. Если клиент жалуется на доставку, нужно объяснить что мы не можем влиять на скорость и качество доставки, за это отвечает маркетплейс, но всё же посоветовать связаться с нами для решения вопроса. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
+    prompt: "Мы компания ARANTA Decor, занимаемся продажей Сухоцветов (пампасной травы), как натуральных, стабилизированных, так и искусственных. Так же в нашем ассортименте есть ароматические саше и вазы для цветов и сухоцветов. Наши ароматические саше и искусственная пампасная трава изготовлены из премиальных материалов. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей от лица компании. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, не формальным, с приятным послевкусием. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слова «привет», «шкаф». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Не использовать в обращении к покупателю его фамилию. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие. Не нужно просить прощения. Нужно предложить покупателю связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой. Если клиент жалуется на недобросовестность продавца, нужно мягко объяснить, что у компании нет мотивации обманывать своих покупателей и нам важно, чтобы каждый покупатель оставался доволен. Мы тщательно, вручную собираем каждый букет, чтобы поддерживать высокий уровень качества. Высочайший приоритет компании – это удовольствие клиентов от приобретения наших сухоцветов. Если клиент жалуется на состояние упаковки, сломанные сухоцветы или сроки доставки, нужно объяснить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. Если клиент жалуется на неполный набор или поврежденные сухоцветы, нужно так же уточнить, что товар мог быть возвратным и соответственно поврежден при первичном вскрытии. Мы рекомендуем проверять целостность желтой пломбы и в целом товар сразу в пункте выдачи. Если желтая пломба на упаковке вскрыта – мы не можем гарантировать целостность набора. И посоветовать связаться с нами для решения вопроса. Если клиент жалуется на осыпание, нужно пояснить, что наши сухоцветы имеют натуральное происхождение и небольшое осыпание – естественный процесс. При необходимости нужно объяснить, что осыпание минимизируется после распаковки, а легкая обработка букета лаком для волос закрепит результат. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
+    promptQuestion: ""
   },
   {
     id: 2,
@@ -42,7 +43,8 @@ const companyArray = [
     apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjE0MiwiaWQiOiIwMTkyN2VjYi1kYWZiLTcxNDItOWJjZC03MDA0YmMzZTUxYzYiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwMTg1MzQsInMiOjEyOCwic2lkIjoiZGNlM2E3NDktZTRmZC00OTAwLWJiZjItYmMzNjI4M2Q5OTgwIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.e5n8WrYSylkgacUML2a4E8RfHaK1QZQ5ijWg912ePuUjerovDIeZFhkotg5ZvOwqDixuPaxJr9_BM23AlXcqDg",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
-    prompt: ""
+    prompt: "Мы компания ARANTA Art Supplies, занимаемся продажей художественных материалов. В нашем ассортименте есть профессиональные, акриловые маркеры. Набор маркеров из 20 цветов, включая золотой и серебряный металлик, подходит для рисования на любых поверхностях. Наши маркеры премиум качества, водостойкие и нетоксичные, безопасны для детей и взрослых. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, с приятным послевкусием. Ответ должен демонстрировать нашу заинтересованность в художественном творчестве клиента. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слово «привет». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие и попросить его связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой.  Если клиент жалуется на состояние упаковки или сроки доставки, нужно посянить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. И посоветовать связаться с нами для решения вопроса. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
+    promptQuestion: ""
   },
   {
     id: 3,
@@ -50,15 +52,16 @@ const companyArray = [
     apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjI4NiwiaWQiOiIwMTkyN2VjZS0xMDc4LTc5YWMtYWRhOS02OGEyY2E3ZTFhZDIiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwNzg0NjMsInMiOjEyOCwic2lkIjoiMGYzNjQ2MDMtYTgxYy00M2FkLTkyOWItMmFmMzE5YWFlNzNjIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.zKFH5qObtzMhttQ6Ju0XBuBmLbrjofW7ilXR8dqskWSVyijpf6dOQ2qJxW9Umzw35rtPDAwrc-caUuHkGkeHKg",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
-    prompt: ""
+    prompt: "Мы компания SunFlowers, занимаемся продажей Сухоцветов (пампасной травы), как натуральных и стабилизированных. Так же в нашем ассортименте представлены мини наборы из сухоцветов, для творчества и декора. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей от лица компании. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, не формальным, с приятным послевкусием. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слово «привет». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие. Не нужно просить прощения. Нужно предложить покупателю связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой. Если клиент жалуется на недобросовестность продавца, нужно мягко объяснить, что у компании нет мотивации обманывать своих покупателей и нам важно, чтобы каждый покупатель оставался доволен. Мы тщательно, вручную собираем каждый букет, чтобы поддерживать высокий уровень качества. Высочайший приоритет компании – это удовольствие клиентов от приобретения наших сухоцветов. Если клиент жалуется на состояние упаковки, сломанные сухоцветы или сроки доставки, нужно объяснить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. И посоветовать связаться с нами для решения вопроса. Если клиент жалуется на осыпание, нужно пояснить, что наши сухоцветы имеют натуральное происхождение и небольшое осыпание – естественный процесс. При необходимости нужно объяснить, что осыпание минимизируется после распаковки, а легкая обработка букета лаком для волос закрепит результат. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
+    promptQuestion: ""
   },
 ];
 
 const telegramChatIds = [
-  {
-    name: "Александр",
-    id: 514186798,
-  },
+  // {
+  //   name: "Александр",
+  //   id: 514186798,
+  // },
   {
     name: "Артём",
     id: 428444661,
@@ -70,7 +73,7 @@ const messagesUnansweredFeedback = ref([]);
 let timerId = null;
 const isRunning = ref(false);
 
-const columns =  ref([
+const columns = ref([
   {
     title: 'Дата',
     dataIndex: 'createdDate',
@@ -90,7 +93,7 @@ const columns =  ref([
     width: '10%',
   },
   {
-    title: 'Отзыв',
+    title: 'Отзыв / Вопрос',
     dataIndex: 'comment',
     key: 'comment',
     width: '25%',
@@ -143,24 +146,47 @@ watch(companySelected, (newValue, oldValue) => {
   }
 });
 
-function setDefaultPrompt() {
-  localStorage.removeItem(fieldCompanies("prompt"));
-
-  prompt.value = transformedCompanySelected.value.prompt;
-}
+// function setDefaultPrompt() {
+//   localStorage.removeItem(fieldCompanies("prompt"));
+//   prompt.value = transformedCompanySelected.value.prompt;
+// }
+//
+// function setDefaultPromptQuestion() {
+//   localStorage.removeItem(fieldCompanies("prompt_question"));
+//   promptQuestion.value = transformedCompanySelected.value.promptQuestion;
+// }
 
 companyOptions.value = transformedCompanyOptions.value;
 
 const transformedCompanySelected = computed(() => JSON.parse(companySelected.value));
 
 const feedbacksList = ref([]);
-const feedbacksData = ref([]);
+const questionsList = ref([]);
+const feedbacksAndQuestions = ref([]);
 
-const countUnanswered = computed(() => {
+const sortedFeedbacksAndQuestions = computed(() => {
+  return [...feedbacksAndQuestions.value].sort((a, b) =>
+    dayjs(a.createdDate) - dayjs(b.createdDate)
+  );
+});
+
+const countUnansweredFeedbacks = computed(() => {
   let count = 0;
 
-  feedbacksData.value.forEach((feedback) => {
-    if (!feedback.status) {
+  sortedFeedbacksAndQuestions.value.forEach((item) => {
+    if (item.type === "feedback" && !item.status) {
+      count++;
+    }
+  });
+
+  return count;
+});
+
+const countUnansweredQuestions = computed(() => {
+  let count = 0;
+
+  sortedFeedbacksAndQuestions.value.forEach((item) => {
+    if (item.type === "question" && !item.status) {
       count++;
     }
   });
@@ -175,13 +201,43 @@ watch(OPENAI_API_KEY, (newValue) => {
 })
 
 const prompt = ref("");
+// const promptDateOfEditing = ref("");
+const promptQuestion = ref("");
+// const promptQuestionDateOfEditing = ref("");
 
 function fieldCompanies(fieldName) {
   return `${transformedCompanySelected.value.name.replaceAll(" ", "")}_${fieldName}`
 }
 
-watch(prompt, (newValue) => {
+// let isInitialPrompt = true;
+// let isInitialPromptQuestion = true;
+
+watch(prompt, (newValue, oldValue) => {
   localStorage.setItem(fieldCompanies("prompt"), newValue);
+
+  // if (isInitialPrompt) {
+  //   isInitialPrompt = false;
+  //   return;
+  // }
+  //
+  // if (newValue.trim() !== oldValue.trim()) {
+  //   promptDateOfEditing.value = dayjs.utc().local().format("DD.MM.YYYY HH:mm");
+  //   localStorage.setItem(fieldCompanies("prompt_date_of_editing"), promptDateOfEditing.value);
+  // }
+});
+
+watch(promptQuestion, (newValue, oldValue) => {
+  localStorage.setItem(fieldCompanies("prompt_question"), newValue);
+
+  // if (isInitialPromptQuestion) {
+  //   isInitialPromptQuestion = false;
+  //   return;
+  // }
+  //
+  // if (newValue.trim() !== oldValue.trim()) {
+  //   promptQuestionDateOfEditing.value = dayjs.utc().local().format("DD.MM.YYYY HH:mm");
+  //   localStorage.setItem(fieldCompanies("prompt_question_date_of_editing"), promptQuestionDateOfEditing.value);
+  // }
 });
 
 function initValues() {
@@ -191,10 +247,21 @@ function initValues() {
   const getPrompt = localStorage.getItem(fieldCompanies("prompt"));
   prompt.value = getPrompt || transformedCompanySelected.value.prompt;
 
+  const getPromptQuestion = localStorage.getItem(fieldCompanies("prompt_question"));
+  promptQuestion.value = getPromptQuestion || transformedCompanySelected.value.promptQuestion;
+
   const getOPENAI_API_KEY = localStorage.getItem(fieldCompanies("OPENAI_API_KEY"));
   OPENAI_API_KEY.value = getOPENAI_API_KEY || "";
 
-  feedbacksData.value = [];
+  // const getPromptDateOfEditing = localStorage.getItem(fieldCompanies("prompt_date_of_editing"));
+  // promptDateOfEditing.value = getPromptDateOfEditing || "";
+  //
+  // const getPromptQuestionDateOfEditing = localStorage.getItem(fieldCompanies("prompt_question_date_of_editing"));
+  // promptQuestionDateOfEditing.value = getPromptQuestionDateOfEditing || "";
+
+  feedbacksAndQuestions.value = [];
+  feedbacksList.value = [];
+  questionsList.value = [];
 }
 
 onMounted(() => {
@@ -202,18 +269,20 @@ onMounted(() => {
 });
 
 async function startGenerateAnwser(id) {
-  const feedback = feedbacksData.value.find((feedbackItem) => feedbackItem.id === id);
+  const item = sortedFeedbacksAndQuestions.value.find((findItem) => findItem.id === id);
 
-  feedback.answer = await generateAnwser({
-    userName: feedback.userName,
-    comment: feedback.comment,
-    productName: feedback.productName,
-    productValuation: feedback.productValuation,
+  item.answer = await generateAnwser({
+    userName: item.userName,
+    comment: item.comment,
+    productName: item.productName,
+    productValuation: item.productValuation,
+    image: item.photoLinks ? true : false,
+    type: item.type,
   });
 }
 
 async function generateAnwser(options) {
-  const { userName, comment, productName, productValuation } = options;
+  const {userName, comment, productName, productValuation, image, type} = options;
 
   const client = axios.create({
     headers: {
@@ -221,13 +290,17 @@ async function generateAnwser(options) {
     }
   });
 
+  const text = type === "feedback"
+    ? `Вот информация о его отзыве: Имя покупателя: ${userName}, товар: ${productName}, оценка: ${productValuation}, отзыв: ${comment.text}, достоинства товара по мнению покупателя: ${comment.pros}, недостатки товара по мнению покупателя: ${comment.cons} ${image ? 'покупатель добавил фотографии' : ''}.`
+    : `Вот вопрос от покупателя: ${comment.text} по товару ${productName}`;
+
   const params = {
     // model: "gpt-3.5-turbo",
     model: "gpt-4o",
     messages: [
       {
         role: "user",
-        content: `${prompt.value}. Вот информация о его отзыве: Имя покупателя: ${userName}, товар: ${productName}, оценка: ${productValuation}, отзыв: ${comment.text}, достоинства товара по мнению покупателя: ${comment.pros}, недостатки товара по мнению покупателя: ${comment.cons}.`,
+        content: `${type === "feedback" ? prompt.value : promptQuestion.value}. ${text}`,
       }
     ],
     max_tokens: 1000
@@ -245,52 +318,137 @@ async function generateAnwser(options) {
   }
 }
 
-watch(feedbacksList, async (newData) => {
+watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
   const updateData = ref([]);
 
-  for (const newItem of newData) {
-    const existingItem = feedbacksData.value.find(item => item.id === newItem.id);
+  const processNewData = (newData, type) => {
+    for (const newItem of newData) {
+      const existingItem = feedbacksAndQuestions.value.find(item => item.id === newItem.id);
 
-    if (existingItem) {
-      updateData.value.push(existingItem);
-    } else {
-      // Ждем ответа от OpenAI
-      // const answer = await generateAnwser({
-      //   userName: newItem.userName,
-      //   comment: newItem.comment,
-      //   productName: newItem.productName,
-      //   productValuation: newItem.productValuation,
-      // });
+      if (existingItem) {
+        updateData.value.push(existingItem);
+      } else {
+        updateData.value.push({
+          ...newItem,
+          type,
+          status: false,
+          answer: "Ответ еще не сгенерирован"
+        });
 
-      // Логируем ответ для проверки
-      // console.log("Сгенерированный ответ для отзыва:", answer);
+        const message = type === 'feedback'
+          ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
+          : 'Новый вопрос';
 
-      // Добавляем элемент в массив только после получения ответа
-      // updateData.value.push({
-      //   ...newItem,
-      //   status: false,
-      //   answer: answer, // Убедитесь, что сюда добавляется правильный ответ
-      // });
-
-      updateData.value.push({
-        ...newItem,
-        status: false,
-        answer: "Ответ еще не сгенерирован"
-      });
-
-      sendMessageToAllUsers(
-        `*${transformedCompanySelected.value.name}*\n` +
-        `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*\n` +
-        `SKU *${newItem.comment.supplierArticle}*\n` +
-        `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n` +
-        `Дата *${newItem.createdDate}*`,
-        newItem.id
-      );
+        sendMessageToAllUsers(
+          `*${transformedCompanySelected.value.name}*\n` +
+          `${message}\n` +
+          `SKU *${newItem.comment.supplierArticle}*\n` +
+          `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
+          newItem.id
+        );
+      }
     }
-  }
+  };
 
-  feedbacksData.value = updateData.value;
+  processNewData(newFeedbacks, 'feedback');
+  processNewData(newQuestions, 'question');
+
+  feedbacksAndQuestions.value = updateData.value;
 });
+// watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
+//   const updateData = [...feedbacksAndQuestions.value];
+//
+//   const processNewData = (newData, type) => {
+//     for (const newItem of newData) {
+//       const existingItem = updateData.find(item => item.id === newItem.id);
+//
+//       if (!existingItem) {
+//         updateData.push({
+//           ...newItem,
+//           type,
+//           status: false,
+//           answer: "Ответ еще не сгенерирован"
+//         });
+//
+//         const message = type === 'feedback'
+//           ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
+//           : 'Новый вопрос';
+//
+//         sendMessageToAllUsers(
+//           `*${transformedCompanySelected.value.name}*\n` +
+//           `${message}\n` +
+//           `SKU *${newItem.comment.supplierArticle}*\n` +
+//           `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
+//           newItem.id
+//         );
+//       }
+//     }
+//   };
+//
+//   processNewData(newFeedbacks, 'feedback');
+//   processNewData(newQuestions, 'question');
+//
+//   feedbacksAndQuestions.value = updateData;
+// });
+
+// watch(feedbacksList, async (newData) => {
+//   const updateData = ref([]);
+//
+//   for (const newItem of newData) {
+//     const existingItem = feedbacksAndQuestions.value.find(item => item.id === newItem.id);
+//
+//     if (existingItem) {
+//       updateData.value.push(existingItem);
+//     } else {
+//       updateData.value.push({
+//         ...newItem,
+//         status: false,
+//         answer: "Ответ еще не сгенерирован"
+//       });
+//
+//       sendMessageToAllUsers(
+//         `*${transformedCompanySelected.value.name}*\n` +
+//         `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*\n` +
+//         `SKU *${newItem.comment.supplierArticle}*\n` +
+//         `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n` +
+//         `Дата *${newItem.createdDate}*`,
+//         newItem.id
+//       );
+//     }
+//   }
+//
+//   console.log("Отзыв: ", feedbacksAndQuestions.value);
+//   feedbacksAndQuestions.value = updateData.value;
+// });
+//
+// watch(questionsList, async (newData) => {
+//   const updateData = ref([]);
+//
+//   for (const newItem of newData) {
+//     const existingItem = feedbacksAndQuestions.value.find(item => item.id === newItem.id);
+//
+//     if (existingItem) {
+//       updateData.value.push(existingItem);
+//     } else {
+//       updateData.value.push({
+//         ...newItem,
+//         status: false,
+//         answer: "Ответ еще не сгенерирован"
+//       });
+//
+//       sendMessageToAllUsers(
+//         `*${transformedCompanySelected.value.name}*\n` +
+//         `Новый вопрос\n` +
+//         `SKU *${newItem.comment.supplierArticle}*\n` +
+//         `Дата *${newItem.createdDate}*`,
+//         newItem.id
+//       );
+//     }
+//   }
+//
+//   console.log("Вопрос: ", feedbacksAndQuestions.value);
+//   feedbacksAndQuestions.value = updateData.value;
+// });
 
 function getScoreWithSymbol(value) {
   if (value === 5) return `${value} 💚`;
@@ -298,6 +456,7 @@ function getScoreWithSymbol(value) {
   else return `${value} 💔`;
 }
 
+// Загрузка отзывов
 function feedbacksGet() {
   loading.value = true;
   message.loading('Загрузка отзывов', 0.5);
@@ -317,7 +476,8 @@ function feedbacksGet() {
     .then(response => {
       feedbacksList.value = response.data.data.feedbacks.map((feedback) => ({
         id: feedback.id,
-        createdDate: dayjs(feedback.createdDate).format('DD.MM.YYYY HH:mm'),
+        // createdDate: dayjs(feedback.createdDate).format('DD.MM.YYYY HH:mm'),
+        createdDate: feedback.createdDate,
         userName: feedback.userName,
         comment: {
           supplierArticle: feedback.productDetails.supplierArticle,
@@ -328,10 +488,10 @@ function feedbacksGet() {
         productName: feedback.productDetails.productName,
         productValuation: feedback.productValuation,
         photoLinks: feedback.photoLinks,
+        type: "feedback"
       }));
 
       loading.value = false;
-      // countUnanswered.value = response.data.data.countUnanswered;
     })
     .catch(error => {
       console.log(error);
@@ -340,42 +500,79 @@ function feedbacksGet() {
     });
 }
 
-function handleStart () {
-  isRunning.value = true;
-  feedbacksGet();
-  timerId = setInterval(feedbacksGet, 600000); // Вызывать функцию каждые 10 минут
+// Загрузка отзывов
+function questionsGet() {
+  loading.value = true;
+  message.loading('Загрузка вопросов', 0.5);
+
+  axios
+    .get("https://feedbacks-api.wildberries.ru/api/v1/questions", {
+      params: {
+        isAnswered: false,
+        take: 5000,
+        skip: 0,
+        order: "dateAsc",
+      },
+      headers: {
+        "Authorization": `${transformedCompanySelected.value.apiToken}`
+      }
+    })
+    .then(response => {
+      questionsList.value = response.data.data.questions.map((question) => ({
+        id: question.id,
+        // createdDate: dayjs(question.createdDate).format('DD.MM.YYYY HH:mm'),
+        createdDate: question.createdDate,
+        userName: "",
+        comment: {
+          supplierArticle: question.productDetails.supplierArticle,
+          pros: "",
+          cons: "",
+          text: question.text,
+        },
+        productName: question.productDetails.productName,
+        productValuation: null,
+        photoLinks: null,
+        type: "question"
+      }));
+
+      loading.value = false;
+    })
+    .catch(error => {
+      console.log(error);
+      message.error('Ошибка при загрузке вопросов!');
+      loading.value = false;
+    });
 }
 
-function handleStop () {
-  isRunning.value = false;
-  clearInterval(timerId); // Остановить таймер
-}
+// Отправка ответа
+function makeAnswer(id, type) {
+  const item = sortedFeedbacksAndQuestions.value.find((findItem) => findItem.id === id);
 
-function resetTimer() {
-  clearInterval(timerId); // Останавливаем текущий таймер
-  timerId = setInterval(feedbacksGet, 600000); // Запускаем новый таймер
-}
+  const path = type === "feedback"
+    ? "https://feedbacks-api.wildberries.ru/api/v1/feedbacks"
+    : "https://feedbacks-api.wildberries.ru/api/v1/questions";
 
-onUnmounted(() => {
-  handleStop();
-});
+  const data = type === "feedback"
+    ? {
+      id: item.id,
+      text: item.answer
+    }
+    : {
+      id: item.id,
+      answer: {text: item.answer},
+      state: "wbRu"
+    };
 
-function makeAnswer(id) {
-  const feedback = feedbacksData.value.find((feedbackItem) => feedbackItem.id === id);
-
-  if (feedback) {
+  if (item) {
     resetTimer();
     axios
-      .patch("https://feedbacks-api.wildberries.ru/api/v1/feedbacks", {
-        id: feedback.id,
-        text: feedback.answer
-      }, {
+      .patch(path, data, {
         headers: {
           Authorization: `${transformedCompanySelected.value.apiToken}`
         }
       })
       .then(() => {
-        feedback.status = true;
+        item.status = true;
         message.success('Ответ успешно отправлен!');
       })
       .catch((error) => {
@@ -389,7 +586,6 @@ function isValidArray(arr) {
   return arr !== null && Array.isArray(arr) && arr.length > 0;
 }
 
-// const TELEGRAM_API_URL = 'https://api.telegram.org/bot';
 const token = transformedCompanySelected.value.telegramToken;
 
 // Функция для получения обновлений и вытаскивания chat_id пользователей
@@ -409,8 +605,6 @@ const token = transformedCompanySelected.value.telegramToken;
 
 // Функция для отправки сообщения всем пользователям
 async function sendMessageToAllUsers(message, feedbackId) {
-  // const chatIds = await getChatIds();
-
   if (telegramChatIds.length === 0) {
     console.log('Нет новых пользователей.');
     return;
@@ -429,83 +623,16 @@ async function sendMessageToAllUsers(message, feedbackId) {
         feedbackId: feedbackId,
         company: transformedCompanySelected.value.name
       });
-      // console.log(`Сообщение отправлено пользователю с chat_id: ${chatId}`);
     } catch (error) {
       console.error(`Ошибка при отправке сообщения пользователю с chat_id: ${chatId.id}`, error);
     }
   }
 }
 
-// let users = []; // Список пользователей с флагом отправки сообщений
-// let lastUpdateId = 0; // Хранение последнего обработанного обновления
-
-// Получение обновлений
-// async function getUpdates() {
-//   try {
-//     const response = await axios.get(`${TELEGRAM_API_URL}${TOKEN}/getUpdates`, {
-//       params: {
-//         offset: lastUpdateId + 1, // Игнорируем все обновления до последнего обработанного
-//       }
-//     });
-//     const updates = response.data.result;
-//
-//     updates.forEach(update => {
-//       if (update.message && update.message.from) {
-//         const userID = update.message.from.id;
-//
-//         // Проверяем, есть ли пользователь в списке
-//         const userExists = users.find(user => user.id === userID);
-//         if (!userExists) {
-//           // Добавляем нового пользователя с флагом, что сообщение ещё не отправлено
-//           users.push({ id: userID, messageSent: false });
-//           // console.log(`Добавлен новый пользователь с ID: ${userID}`);
-//         }
-//
-//         // Обновляем `lastUpdateId` на максимальное значение
-//         if (update.update_id > lastUpdateId) {
-//           lastUpdateId = update.update_id;
-//         }
-//       }
-//     });
-//   } catch (error) {
-//     console.error('Ошибка при получении обновлений:', error);
-//   }
-// }
-//
-// // Отправка сообщений только тем, кому ещё не отправлено
-// async function sendMessageToAllUsers(message) {
-//   try {
-//     for (const user of users) {
-//       // Отправляем сообщение только если оно ещё не было отправлено
-//       if (!user.messageSent) {
-//         console.log('Отправка: ', user.id);
-//
-//         await axios.post(`${TELEGRAM_API_URL}${TOKEN}/sendMessage`, {
-//           chat_id: user.id,
-//           text: message,
-//           parse_mode: 'Markdown'
-//         });
-//
-//         console.log(`Сообщение отправлено пользователю с ID: ${user.id}`);
-//         user.messageSent = true; // Отмечаем, что сообщение было отправлено
-//       }
-//     }
-//   } catch (error) {
-//     console.error('Ошибка при отправке сообщения:', error);
-//   }
-// }
-
-// Основная асинхронная функция
-// async function main(message) {
-//   await getUpdates(); // Дожидаемся выполнения getUpdates
-//   await sendMessageToAllUsers(message); // После этого отправляем сообщение
-// }
-
-// Вызов основной функции
-// main();
-
 function getColorProductValuation(record) {
-  if (record.productValuation === 5) {
+  if (record.productValuation === null) {
+    return "default";
+  } else if (record.productValuation === 5) {
     return "#87d068";
   } else if (record.productValuation === 4) {
     return "gold";
@@ -515,7 +642,7 @@ function getColorProductValuation(record) {
 }
 
 // Храним информацию о текущей редактируемой строке
-const editingRow = ref({ id: null, answer: '' });
+const editingRow = ref({id: null, answer: ''});
 
 // Проверяем, редактируется ли строка
 const isEditing = (id) => {
@@ -525,22 +652,49 @@ const isEditing = (id) => {
 // Функция для редактирования
 const edit = (record) => {
   // Инициализируем ответ текущим значением
-  editingRow.value = { id: record.id, answer: record.answer || '' };
+  editingRow.value = {id: record.id, answer: record.answer || ''};
 };
 
 // Сохранение изменений
 const save = (id) => {
-  const index = feedbacksData.value.findIndex((item) => item.id === id);
+  const index = sortedFeedbacksAndQuestions.value.findIndex((item) => item.id === id);
   if (index !== -1) {
-    feedbacksData.value[index].answer = editingRow.value.answer;
+    sortedFeedbacksAndQuestions.value[index].answer = editingRow.value.answer;
   }
-  editingRow.value = { id: null, answer: '' };
+  editingRow.value = {id: null, answer: ''};
 };
 
 // Отмена редактирования
 const cancelEdit = () => {
-  editingRow.value = { id: null, answer: '' };
+  editingRow.value = {id: null, answer: ''};
 };
+
+function handleStart() {
+  isRunning.value = true;
+  feedbacksGet();
+  questionsGet();
+  timerId = setInterval(() => {
+    feedbacksGet();
+    questionsGet();
+  }, 600000); // 600000 миллисекунд = 10 минут
+}
+
+function handleStop() {
+  isRunning.value = false;
+  clearInterval(timerId); // Остановить таймер
+}
+
+function resetTimer() {
+  clearInterval(timerId); // Останавливаем текущий таймер
+  timerId = setInterval(() => {
+    feedbacksGet();
+    questionsGet();
+  }, 600000); // 600000 миллисекунд = 10 минут
+}
+
+onUnmounted(() => {
+  handleStop();
+});
 </script>
 
 <template>
@@ -562,7 +716,7 @@ const cancelEdit = () => {
 
           <a-row :gutter="24">
             <a-col :span="24">
-              <a-form-item label="Prompt" name="prompt">
+              <a-form-item label="Prompt для отзыва" name="prompt">
                 <a-textarea
                   v-model:value="prompt"
                   auto-size
@@ -572,19 +726,55 @@ const cancelEdit = () => {
             </a-col>
           </a-row>
 
+<!--          <a-row v-if="promptDateOfEditing" :gutter="24" style="margin-top: -20px; margin-bottom: 24px;">-->
+<!--            <a-col :span="24">-->
+<!--              Дата изменения {{ promptDateOfEditing }}-->
+<!--            </a-col>-->
+<!--          </a-row>-->
+
           <a-row :gutter="24">
             <a-col :span="24">
-              <a-form-item label="" name="defaultPrompt">
-                <a-button
-                  type="dashed"
+              <a-form-item label="Prompt для вопроса" name="promptQuestion">
+                <a-textarea
+                  v-model:value="promptQuestion"
+                  auto-size
                   :disabled="isRunning"
-                  @click="setDefaultPrompt"
-                >
-                  Значение prompt по умолчанию
-                </a-button>
+                />
               </a-form-item>
             </a-col>
           </a-row>
+
+<!--          <a-row v-if="promptQuestionDateOfEditing" :gutter="24" style="margin-top: -20px;">-->
+<!--            <a-col :span="24">-->
+<!--              Дата изменения {{ promptQuestionDateOfEditing }}-->
+<!--            </a-col>-->
+<!--          </a-row>-->
+
+<!--          <a-row :gutter="24">-->
+<!--            <a-col :span="8">-->
+<!--              <a-form-item label="" name="defaultPrompt">-->
+<!--                <a-button-->
+<!--                  type="dashed"-->
+<!--                  :disabled="isRunning"-->
+<!--                  @click="setDefaultPrompt"-->
+<!--                  block-->
+<!--                >-->
+<!--                  Значение prompt для отзывов по умолчанию-->
+<!--                </a-button>-->
+<!--              </a-form-item>-->
+<!--            </a-col>-->
+<!--            <a-col :span="8">-->
+<!--              <a-form-item label="" name="defaultPrompt">-->
+<!--                <a-button-->
+<!--                  type="dashed"-->
+<!--                  :disabled="isRunning"-->
+<!--                  @click="setDefaultPromptQuestion"-->
+<!--                >-->
+<!--                  Значение prompt для вопросов по умолчанию-->
+<!--                </a-button>-->
+<!--              </a-form-item>-->
+<!--            </a-col>-->
+<!--          </a-row>-->
         </a-collapse-panel>
       </a-collapse>
 
@@ -630,21 +820,30 @@ const cancelEdit = () => {
     </a-form>
 
     <div style="display: flex; align-items: flex-end; margin-bottom: 10px;">
-      <span style="margin-right: 5px;">Отзывы на которые не ответили:</span><a-badge :count="countUnanswered" show-zero/>
+      <span style="margin-right: 5px;">Количество неотвеченных отзывов</span>
+      <a-badge :count="countUnansweredFeedbacks" show-zero/>
+      <span style="margin: 0 5px;">и вопросов</span>
+      <a-badge :count="countUnansweredQuestions" show-zero/>
     </div>
 
     <a-table
       :columns="columns"
-      :data-source="feedbacksData"
+      :data-source="sortedFeedbacksAndQuestions"
       :loading="loading"
       row-key="id"
     >
       <template #bodyCell="{ column, record, index }">
+        <template v-if="column.key === 'createdDate'">
+          <span v-if="record.createdDate">
+            {{ dayjs(record.createdDate).format('DD.MM.YYYY HH:mm') }}
+          </span>
+        </template>
+
         <template v-if="column.key === 'userName'">
           <span v-if="record.userName">
             {{ record.userName }}
           </span>
-          <a-tag v-else color="red">
+          <a-tag v-else color="default">
             Нет имени
           </a-tag>
         </template>
@@ -663,7 +862,7 @@ const cancelEdit = () => {
           </div>
 
           <span v-else>
-            <a-tag color="red">
+            <a-tag color="default">
              Отсутствуют
             </a-tag>
           </span>
@@ -686,6 +885,9 @@ const cancelEdit = () => {
             <span v-if="record.productValuation === 1">
               Ужасно ({{ record.productValuation }})
             </span>
+            <span v-if="!record.productValuation">
+              Отсутствует
+            </span>
           </a-tag>
         </template>
 
@@ -700,8 +902,8 @@ const cancelEdit = () => {
             <p v-if="record.comment.cons">
               <b>Недостатки: </b> {{ record.comment.cons }}
             </p>
-            <p v-if="record.comment.text">
-              {{ record.comment.text }}
+            <p v-if="record.comment.text" :class="{ 'question-text': record.type === 'question' }">
+              <b v-if="record.type === 'question'">Вопрос: </b> {{ record.comment.text }}
             </p>
           </div>
         </template>
@@ -740,7 +942,7 @@ const cancelEdit = () => {
           <div style="display: flex; flex-direction: column">
             <a @click="startGenerateAnwser(record.id)" style="margin-bottom: 10px">Сгенерировать</a>
 
-            <a @click="makeAnswer(record.id)">Ответить</a>
+            <a @click="makeAnswer(record.id, record.type)">Ответить</a>
           </div>
         </template>
       </template>
@@ -755,5 +957,9 @@ const cancelEdit = () => {
 
 .image__list-item:last-child {
   margin-bottom: 0;
+}
+
+.question-text {
+  color: #1677ff;
 }
 </style>

@@ -58,14 +58,14 @@ const companyArray = [
 ];
 
 const telegramChatIds = [
-  // {
-  //   name: "Александр",
-  //   id: 514186798,
-  // },
   {
-    name: "Артём",
-    id: 428444661,
-  }
+    name: "Александр",
+    id: 514186798,
+  },
+  // {
+  //   name: "Артём",
+  //   id: 428444661,
+  // }
 ];
 
 const messagesUnansweredFeedback = ref([]);
@@ -339,10 +339,15 @@ watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
           ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
           : 'Новый вопрос';
 
+        const productValuation = type === "feedback"
+          ? `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n`
+          : '';
+
         sendMessageToAllUsers(
           `*${transformedCompanySelected.value.name}*\n` +
           `${message}\n` +
           `SKU *${newItem.comment.supplierArticle}*\n` +
+          productValuation +
           `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
           newItem.id
         );

@@ -504,39 +504,46 @@ function questionsGet() {
 // Отправка ответа
 function makeAnswer(id, type) {
   const item = sortedFeedbacksAndQuestions.value.find((findItem) => findItem.id === id);
+  if (!item) return;
 
-  const path = type === "feedback"
-    ? "https://feedbacks-api.wildberries.ru/api/v1/feedbacks"
-    : "https://feedbacks-api.wildberries.ru/api/v1/questions";
+  const paths = {
+    feedback: "https://feedbacks-api.wildberries.ru/api/v1/feedbacks/answer",
+    question: "https://feedbacks-api.wildberries.ru/api/v1/questions",
+  };
 
-  const data = type === "feedback"
-    ? {
+  const data = {
+    feedback: {
       id: item.id,
       text: item.answer
-    }
-    : {
+    },
+    question: {
       id: item.id,
-      answer: {text: item.answer},
+      answer: {
+        text: item.answer
+      },
       state: "wbRu"
-    };
+    },
+  };
 
-  if (item) {
-    resetTimer();
-    axios
-      .patch(path, data, {
-        headers: {
-          Authorization: `${transformedCompanySelected.value.apiToken}`
-        }
-      })
-      .then(() => {
-        item.status = true;
-        message.success('Ответ успешно отправлен!');
-      })
-      .catch((error) => {
-        console.error(error);
-        message.error('Ошибка при отправке ответа!');
-      });
-  }
+  const method = type === "feedback" ? "post" : "patch";
+  const path = paths[type];
+  const payload = data[type];
+
+  resetTimer();
+
+  axios[method](path, payload, {
+      headers: {
+        Authorization: transformedCompanySelected.value.apiToken
+      }
+    })
+    .then(() => {
+      item.status = true;
+      message.success("Ответ успешно отправлен!");
+    })
+    .catch((error) => {
+      console.error(error);
+      message.error("Ошибка при отправке ответа!");
+    });
 }
 
 function isValidArray(arr) {

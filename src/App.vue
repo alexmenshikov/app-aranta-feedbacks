@@ -31,7 +31,7 @@ const companyArray = [
   {
     id: 1,
     name: "ARANTA Decor (WB)",
-    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0MzUzODUyMSwiaWQiOiIwMTkyNDcyNS1mMGUzLTc4MTEtYTJjZC1jOThiOWZlNDc0YjMiLCJpaWQiOjUzNzE1MjI2LCJvaWQiOjU3MDAwOCwicyI6MTI4LCJzaWQiOiI0ZTkzM2M1NC1kYzA2LTQzOWEtYTA2Ni1mNWRkZjFlMDdhNDUiLCJ0IjpmYWxzZSwidWlkIjo1MzcxNTIyNn0.dWCg4v_7MCRQGNMEXuKTM910gDu0ZuijqaGiHvGE4mQuJibGXX4S5qW5csKJQr3bKnZsqDN3N50x1VMLaFYzBw",
+    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwNDE3djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc2MTMyNDMwOSwiaWQiOiIwMTk2NmI0My04NTRmLTdiYTgtOWQxZC0xMTg4Y2EwMDc5MWUiLCJpaWQiOjUzNzE1MjI2LCJvaWQiOjU3MDAwOCwicyI6MTMwLCJzaWQiOiI0ZTkzM2M1NC1kYzA2LTQzOWEtYTA2Ni1mNWRkZjFlMDdhNDUiLCJ0IjpmYWxzZSwidWlkIjo1MzcxNTIyNn0.dM6lbi3dVhIy6_44lpjM7gLJsKJKsuNkguqvlprxvzQUUTGQmh-7dq82If-wJWfgqmxJ4hPm0Bq5GQflrz0Fwg",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
     prompt: "Мы компания ARANTA Decor, занимаемся продажей Сухоцветов (пампасной травы), как натуральных, стабилизированных, так и искусственных. Так же в нашем ассортименте есть ароматические саше и вазы для цветов и сухоцветов. Наши ароматические саше и искусственная пампасная трава изготовлены из премиальных материалов. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей от лица компании. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, не формальным, с приятным послевкусием. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слова «привет», «шкаф». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Не использовать в обращении к покупателю его фамилию. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие. Не нужно просить прощения. Нужно предложить покупателю связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой. Если клиент жалуется на недобросовестность продавца, нужно мягко объяснить, что у компании нет мотивации обманывать своих покупателей и нам важно, чтобы каждый покупатель оставался доволен. Мы тщательно, вручную собираем каждый букет, чтобы поддерживать высокий уровень качества. Высочайший приоритет компании – это удовольствие клиентов от приобретения наших сухоцветов. Если клиент жалуется на состояние упаковки, сломанные сухоцветы или сроки доставки, нужно объяснить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. Если клиент жалуется на неполный набор или поврежденные сухоцветы, нужно так же уточнить, что товар мог быть возвратным и соответственно поврежден при первичном вскрытии. Мы рекомендуем проверять целостность желтой пломбы и в целом товар сразу в пункте выдачи. Если желтая пломба на упаковке вскрыта – мы не можем гарантировать целостность набора. И посоветовать связаться с нами для решения вопроса. Если клиент жалуется на осыпание, нужно пояснить, что наши сухоцветы имеют натуральное происхождение и небольшое осыпание – естественный процесс. При необходимости нужно объяснить, что осыпание минимизируется после распаковки, а легкая обработка букета лаком для волос закрепит результат. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
@@ -40,7 +40,7 @@ const companyArray = [
   {
     id: 2,
     name: "ARANTA Art Supplies (WB)",
-    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjE0MiwiaWQiOiIwMTkyN2VjYi1kYWZiLTcxNDItOWJjZC03MDA0YmMzZTUxYzYiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwMTg1MzQsInMiOjEyOCwic2lkIjoiZGNlM2E3NDktZTRmZC00OTAwLWJiZjItYmMzNjI4M2Q5OTgwIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.e5n8WrYSylkgacUML2a4E8RfHaK1QZQ5ijWg912ePuUjerovDIeZFhkotg5ZvOwqDixuPaxJr9_BM23AlXcqDg",
+    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwNDE3djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc2MjgwNjk1MCwiaWQiOiIwMTk2YzNhMi1kMmUyLTc4OGItYmQxZS0xODUzNTdjNWQyOWUiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwMTg1MzQsInMiOjEzMCwic2lkIjoiZGNlM2E3NDktZTRmZC00OTAwLWJiZjItYmMzNjI4M2Q5OTgwIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.x3nr4oDmt6LXNlIbkYrs3Q0Q_DqdZCnZyBdxAZFelxhdBBAaC2vD2RlK5a4NqL0KlAd30HpRLEI6KcDExuzxdw",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
     prompt: "Мы компания ARANTA Art Supplies, занимаемся продажей художественных материалов. В нашем ассортименте есть профессиональные, акриловые маркеры. Набор маркеров из 20 цветов, включая золотой и серебряный металлик, подходит для рисования на любых поверхностях. Наши маркеры премиум качества, водостойкие и нетоксичные, безопасны для детей и взрослых. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, с приятным послевкусием. Ответ должен демонстрировать нашу заинтересованность в художественном творчестве клиента. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слово «привет». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие и попросить его связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой.  Если клиент жалуется на состояние упаковки или сроки доставки, нужно посянить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. И посоветовать связаться с нами для решения вопроса. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
@@ -49,7 +49,7 @@ const companyArray = [
   {
     id: 3,
     name: "Sunflowers (WB)",
-    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjQxMDAxdjEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc0NDQ3MjI4NiwiaWQiOiIwMTkyN2VjZS0xMDc4LTc5YWMtYWRhOS02OGEyY2E3ZTFhZDIiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwNzg0NjMsInMiOjEyOCwic2lkIjoiMGYzNjQ2MDMtYTgxYy00M2FkLTkyOWItMmFmMzE5YWFlNzNjIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.zKFH5qObtzMhttQ6Ju0XBuBmLbrjofW7ilXR8dqskWSVyijpf6dOQ2qJxW9Umzw35rtPDAwrc-caUuHkGkeHKg",
+    apiToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwNDE3djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc2MjgwNjg2NiwiaWQiOiIwMTk2YzNhMS04YmI0LTczZDMtOWJmNS1hN2Y5OTZjZThkYjAiLCJpaWQiOjk2OTgyNDY4LCJvaWQiOjQwNzg0NjMsInMiOjEzMCwic2lkIjoiMGYzNjQ2MDMtYTgxYy00M2FkLTkyOWItMmFmMzE5YWFlNzNjIiwidCI6ZmFsc2UsInVpZCI6OTY5ODI0Njh9.TmVp0YnTKIdnqCZwZiI26NLIRv7fnfjJMeC12tOOMBoNX4cSevC1a-ncPuX_rbsqGOogBBfQxcgllWTNy4pd7g",
     telegramToken: "7954264530:AAFBQFwNmh8ZnL7CQXwZrjLJuBjlAkgdeKg",
     chatId: "514186798",
     prompt: "Мы компания SunFlowers, занимаемся продажей Сухоцветов (пампасной травы), как натуральных и стабилизированных. Так же в нашем ассортименте представлены мини наборы из сухоцветов, для творчества и декора. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей. Ты являешься менеджером, который отвечает на отзывы и вопросы покупателей от лица компании. Клиент должен чувствовать доброту и позитивные эмоции от ответов на их отзывы и вопросы. Ответ должен быть коротким, оригинальным, не формальным, с приятным послевкусием. Не используй в ответе разговорную речь, исключай тавтологию. Можно добавить приятных смайликов, что бы текст выглядел живее. В начале ответа должно быть приветствие, обращаемся с клиентом на «вы», но не часто. Не используем слово «привет». В конце ответа должны быть доброе пожелание клиенту и фраза от нашей команды. Также должен быть ненавязчивый призыв к покупке снова. Отзыв, который я пришлю, будет содержать имя покупателя, оценку от покупателя, комментарий, достоинства товара и недостатки. Если покупатель поставил 5 звезд и хорошо отозвался о товаре – нужно поблагодарить покупателя за высокую оценку. Если клиент просто поставил низкую оценку без дополнительной информации, нужно вежливо поинтересоваться, чем товар не оправдал ожиданий клиента. Если клиент получил негативный опыт при взаимодействии с нашим товаром, нужно обязательно выразить умеренное сочувствие. Не нужно просить прощения. Нужно предложить покупателю связаться с нами через личный кабинет, «Чат с продавцом». И заверить, что мы решим его вопрос и не оставим наедине с проблемой. Если клиент жалуется на недобросовестность продавца, нужно мягко объяснить, что у компании нет мотивации обманывать своих покупателей и нам важно, чтобы каждый покупатель оставался доволен. Мы тщательно, вручную собираем каждый букет, чтобы поддерживать высокий уровень качества. Высочайший приоритет компании – это удовольствие клиентов от приобретения наших сухоцветов. Если клиент жалуется на состояние упаковки, сломанные сухоцветы или сроки доставки, нужно объяснить, что транспортировкой и хранением товара занимается площадка маркетплейса и мы не можем повлиять на то, что происходит с товаром в пути. И посоветовать связаться с нами для решения вопроса. Если клиент жалуется на осыпание, нужно пояснить, что наши сухоцветы имеют натуральное происхождение и небольшое осыпание – естественный процесс. При необходимости нужно объяснить, что осыпание минимизируется после распаковки, а легкая обработка букета лаком для волос закрепит результат. Сейчас я пришлю тебе отзыв от покупателя и тебе надо ответить.",
@@ -285,7 +285,7 @@ async function generateAnwser(options) {
     : `Вопрос от покупателя: ${comment.text} по товару ${productName}`;
 
   const params = {
-    model: "gpt-4o",
+    model: "deepseek-chat",
     messages: [
       {
         role: "user",
@@ -298,12 +298,12 @@ async function generateAnwser(options) {
   message.loading('Генерация ответа');
 
   try {
-    const response = await client.post("https://api.openai.com/v1/chat/completions", params);
+    const response = await client.post("https://api.deepseek.com/v1/chat/completions", params);
 
     return response.data.choices[0].message.content; // Возвращаем ответ
   } catch (error) {
-    console.error("Ошибка при запросе к OpenAI:", error);
-    return "Не удалось получить ответ от OpenAI"; // Возвращаем сообщение об ошибке
+    console.error("Ошибка при запросе к DeepSeek:", error);
+    return "Не удалось получить ответ от DeepSeek"; // Возвращаем сообщение об ошибке
   }
 }
 
@@ -324,22 +324,22 @@ watch([feedbacksList, questionsList], ([newFeedbacks, newQuestions]) => {
           answer: "Ответ еще не сгенерирован"
         });
 
-        const message = type === 'feedback'
-          ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
-          : 'Новый вопрос';
+        // const message = type === 'feedback'
+        //   ? `Новый отзыв от *${newItem.userName ? newItem.userName : 'Нет имени'}*`
+        //   : 'Новый вопрос';
+        //
+        // const productValuation = type === "feedback"
+        //   ? `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n`
+        //   : '';
 
-        const productValuation = type === "feedback"
-          ? `Оценка *${getScoreWithSymbol(newItem.productValuation)}*\n`
-          : '';
-
-        sendMessageToAllUsers(
-          `*${transformedCompanySelected.value.name}*\n` +
-          `${message}\n` +
-          `SKU *${newItem.comment.supplierArticle}*\n` +
-          productValuation +
-          `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
-          newItem.id
-        );
+        // sendMessageToAllUsers(
+        //   `*${transformedCompanySelected.value.name}*\n` +
+        //   `${message}\n` +
+        //   `SKU *${newItem.comment.supplierArticle}*\n` +
+        //   productValuation +
+        //   `Дата *${dayjs(newItem.createdDate).format('DD.MM.YYYY HH:mm')}*`,
+        //   newItem.id
+        // );
       }
     }
   };
